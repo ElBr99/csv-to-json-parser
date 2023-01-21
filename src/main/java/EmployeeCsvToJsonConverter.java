@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.List;
 
-public class Main {
+public class EmployeeCsvToJsonConverter {
     public static void main(String[] args) throws IOException {
         try (CSVReader csvReader = new CSVReader(new FileReader("data.csv"))) {
             ColumnPositionMappingStrategy<Employee> strategy = new ColumnPositionMappingStrategy<>();
@@ -29,6 +29,7 @@ public class Main {
                 e.printStackTrace();
             }
         }
+
 
     }
 
